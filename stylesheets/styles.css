@@ -1,0 +1,124 @@
+/* line 23, ../sass/styles.scss */
+html body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/* line 30, ../sass/styles.scss */
+header {
+  background-image: url(../images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: top right;
+}
+
+/* line 37, ../sass/styles.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 42, ../sass/styles.scss */
+.navbar .logo {
+  width: 80px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* line 46, ../sass/styles.scss */
+.navbar .logo img {
+  width: 100%;
+}
+/* line 51, ../sass/styles.scss */
+.navbar .btn-wrapper {
+  display: flex;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+/* line 56, ../sass/styles.scss */
+.navbar .btn-wrapper .navbar__btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  color: #fafafa;
+  font-size: 12px;
+}
+/* line 66, ../sass/styles.scss */
+.navbar .btn-wrapper .navbar__btn.--green {
+  background-color: #05d69b;
+  width: 100px;
+}
+/* line 71, ../sass/styles.scss */
+.navbar .btn-wrapper .navbar__btn.--transp {
+  background-color: transparent;
+}
+
+/* line 79, ../sass/styles.scss */
+.main .img-container {
+  width: 70%;
+  text-align: center;
+}
+/* line 84, ../sass/styles.scss */
+.main .img-container img {
+  width: 100%;
+}
+/* line 89, ../sass/styles.scss */
+.main .main__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 96, ../sass/styles.scss */
+.main .main__text {
+  color: gray;
+  margin: 16px;
+  font-size: 13px;
+}
+/* line 102, ../sass/styles.scss */
+.main .main__btn {
+  background-color: #05d69b;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  width: 180px;
+  margin: 12px 0 36px 0;
+}
+
+/* line 114, ../sass/styles.scss */
+.features {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 120, ../sass/styles.scss */
+.features .features__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 60px;
+}
+/* line 127, ../sass/styles.scss */
+.features .features__info {
+  color: gray;
+  margin: 16px 20px 35px 20px;
+  font-size: 13px;
+}
+/* line 134, ../sass/styles.scss */
+.features .features__card {
+  margin: 70px 0 70px 0;
+}
+
+/* line 148, ../sass/styles.scss */
+.apps .apps__card-wrapper .apps__card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
