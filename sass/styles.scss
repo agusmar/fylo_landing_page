@@ -1,3 +1,139 @@
-body {
-  color: red;
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+//fonts ********************************************************************
+$raleway: 'Raleway', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$light: 400;
+$normal: 600;
+$bold: 700;
+
+//colors ******************************************************
+$primary-soft:  hsl(243, 86%, 85%);
+$primary-dark: hsl(243, 87%, 12%);
+
+$accent: hsl(163, 95%, 43%);
+
+$neutral-light: hsl(106, 0%, 98%);
+$neutral-gray: hsl(0, 0%, 50%);
+$neutral-dark: hsl(0, 0%, 17%);
+//**************************************************************4
+
+html body {
+  padding: 0;
+  margin: 0;
+  font-family: $open-sans;
+  text-align: center;
 }
+
+header {
+  background-image: url(../images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: top right;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 80px;
+    margin-left: 30px;
+    margin-top: 30px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+
+    .navbar__btn {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 2px;
+      color: $neutral-light;
+      font-size: 12px;
+
+      &.--green {
+        background-color: $accent;
+        width: 100px;
+      }
+
+      &.--transp {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.main {
+  .img-container {
+    width: 70%;
+    text-align: center;
+    // ERROR AL CENTRAR IMAGEN!!!
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main__title {
+    font-family: $raleway;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .main__text {
+    color: $neutral-gray;
+    margin: 16px;
+    font-size: 13px;
+  }
+
+  .main__btn {
+    background-color: $accent;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    width: 180px;
+    margin: 12px 0 36px 0;
+  }
+}
+
+.features {
+  background-color: rgb(240, 240, 240);
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  
+  .features__title {
+    font-family: $raleway;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 60px;
+  }
+
+  .features__info {
+    color: $neutral-gray;
+    margin: 16px 20px 35px 20px;
+    font-size: 13px;
+
+  }
+
+  .features__card {
+    margin: 70px 0 70px 0;
+
+  }
+}
+

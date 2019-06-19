@@ -1,171 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Landing page with detailed integrations section</title>
 </head>
 
 <body>
   <header>
-    <div class="logo"></div>
     <nav class="navbar">
-        <button class="navbar__btn">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="btn-wrapper">
+        <button class="navbar__btn --transp">
           Sign In
-        </button>  
-        <button class="navbar__btn">
+        </button>
+        <button class="navbar__btn --green">
           Sign up
         </button>
       </div>
-    </nav>     
+      </div>
+    </nav>
   </header>
   <main>
-  <section class="main">
-    <h1 class="main__title"> All your files in one secure location, accessible anywhere.</h1>
-    <p>Fylo stores all your most important files in one secure location. 
-        Access them wherever you need, share and collaborate with friends, 
+
+    <section class="main">
+      <div class="img-container">
+        <img src="images/illustration-main.svg" alt="">
+      </div>
+      <h1 class="main__title">
+        All your files in one <br>
+        secure location, <br>
+        accessible anywhere.</h1>
+      <p class="main__text">Fylo stores all your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
         family and co-workers.</p>
-    <button class="main__btn">
+      <button class="main__btn">
         Get Started
-    </button> 
-  </section>
-  <section class="adv">
-      <h2 class="adv__title">
-        Stay productive, wherever you are
+      </button>
+    </section>
+    <section class="features">
+      <h2 class="features__title">
+        Stay productive, <br>
+        wherever you are
       </h2>
-      <p class="adv__info">
-          Never let location be an issue when accessing your files. Fylo has you 
-          covered for all of your file storage needs.
+      <p class="features__info">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
       </p>
-    
-      <div class="adv__card">
-          <div class="adv__card-img">
-              <img src="" alt="">
-          </div>
-          <h3 class="adv__card-title">
-              All platforms, all devices, all your files
-          </h3> 
+
+      <div class="features__card">
+        <div class="features__card-img">
+          <img src="images/icon-devices.svg" alt="">
+        </div>
+        <h3 class="features__card-title">
+          All platforms, all devices, all your files
+        </h3>
       </div>
-      <div class="adv__card">
-          <div class="adv__card-img">
-              <img src="" alt="">
-          </div>
-          <h3 class="adv__card-title">
-              Security you can trust
-          </h3> 
+      <div class="features__card">
+        <div class="features__card-img">
+          <img src="images/icon-security.svg" alt="">
+        </div>
+        <h3 class="features__card-title">
+          Security you can trust
+        </h3>
       </div>
-      <div class="adv__card">
-          <div class="adv__card-img">
-              <img src="" alt="">
-          </div>
-          <h3 class="adv__card-title">
-              Real-time collaboration
-          </h3> 
+      <div class="features__card">
+        <div class="features__card-img">
+          <img src="images/icon-collaboration.svg" alt="">
+        </div>
+        <h3 class="features__card-title">
+          Real-time collaboration
+        </h3>
       </div>
-    
-      <section class="apps">
+    </section>
+
+    <section class="apps">
         <div class="apss__description">
-            <h2 class="apps__title"></h2>Connect with the apps you use everyday
+          <h2 class="apps__title"></h2>Connect with the apps you use everyday
         </div>
         <p class="app__text">
-            Fylo seamlessly integrates with hundreds of apps, meaning you can access and 
-            work on your files from the apps you already know and love
+          Fylo seamlessly integrates with hundreds of apps, meaning you can access and
+          work on your files from the apps you already know and love
         </p>
 
         <div class="apps__card-wrapper">
           <div class="apps__card">
-              Slack
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+            <img src="images/logo-slack.png" alt="">
+            Slack
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
           </div>
           <div class="apps__card">
-              GSuite
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
-          </div>          <div class="apps__card">
-              Trello
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est..
-          </div>          <div class="apps__card">
-              Salesforce
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
-          </div>          <div class="apps__card">
-              Typeform
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+            <img src="images/logo-gsuite.png" alt="">
+            GSuite
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </div>
+          <div class="apps__card">
+            <img src="images/logo-trello.png" alt="">
+            Trello
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est..
+          </div>
+          <div class="apps__card">
+            <img src="images/logo-salesforce.png" alt="">
+            Salesforce
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </div>
+          <div class="apps__card">
+            <img src="images/logo-typeform.png" alt="">
+            Typeform
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
           </div>
       </section>
 
 
-     
-  </section>
-  <div>
+
+    </section>
+    <div>
       <h2>
-          Start using Fylo today
-      </h2> 
+        Start using Fylo today
+      </h2>
 
       <p>
-          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-          questions, our support team would be happy to help you.
+        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.
       </p>
 
       <button>
-          Get Started
-      </button> 
-  </div>
+        Get Started
+      </button>
+    </div>
 
-  <div>
+    <div>
       <p>
-          Receive updates from us, including tips and tricks on how to improve your workflow.
-      </p> 
+        Receive updates from us, including tips and tricks on how to improve your workflow.
+      </p>
       <input type="text">
       <button>
-          Join
-      </button> 
-    
+        Join
+      </button>
+
       <div>
-          <div>
-              Phone: +1-543-123-4567
-          </div>
-          <div>
-              example@fylo.com
-          </div>
+        <div>
+          Phone: +1-543-123-4567
+        </div>
+        <div>
+          example@fylo.com
+        </div>
       </div>
 
-    <div>
-      <ul>
-        <li>Fylo</li>
-        <li>Desktop App</li>
-        <li> Mobile App</li>
-        <li>Pricing</li>
-        <li>Feature</li>
-      </ul>  
-    </div>
+      <div>
+        <ul>
+          <li>Fylo</li>
+          <li>Desktop App</li>
+          <li> Mobile App</li>
+          <li>Pricing</li>
+          <li>Feature</li>
+        </ul>
+      </div>
 
-    <div>
-      <ul>
-        <li>Company</li>
-        <li>About Us</li>
-        <li>Jobs</li>
-        <li>Press</li>
-        <li>Blog</li>
-      </ul> 
-    </div>
+      <div>
+        <ul>
+          <li>Company</li>
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+      </div>
 
-    <div>
+      <div>
         <ul>
           <li>Support</li>
           <li>Contact Us</li>
           <li>Terms</li>
           <li>Privacy</li>
-        </ul> 
+        </ul>
       </div>
-    <div>
+      <div>
 
-</main>
+  </main>
 
   <footer>
     <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a> 🎉
     </p>
   </footer>
 </body>
+
 </html>
