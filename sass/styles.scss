@@ -149,7 +149,7 @@ header {
   }
 
   .features__card-img {
-    width: 100px;
+    width: 80px;
     margin: auto;
     
     img {
@@ -172,6 +172,9 @@ header {
   color: $neutral-gray;
   margin: 16px 20px 35px 20px;
   font-size: 13px;
+    p {
+      color: $neutral-gray;
+    }
   }
 
   .apps__card-wrapper {
@@ -192,6 +195,15 @@ header {
       box-shadow: 0px 0px 11px 0px rgba(201,201,201,1);
     }
 
+    .apps__card-info {
+      color: $neutral-gray;
+      margin: 16px 16px 24px 16px;
+      font-size: 13px;
+      h5 {
+        color: $neutral-dark;
+      }
+    }
+
     .apps__logo {
       padding: 16px 0 16px 0;
       width: 100%;
@@ -206,7 +218,6 @@ header {
         width: 50%;
       }
     }
-
   }
 }
 
@@ -275,8 +286,68 @@ footer {
 }
 
 .attribution {
-  color: $primary-soft;
+  color: $neutral-light;
   margin-bottom: 20px;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: $neutral-gray;
+    font-weight: bold;
+  }
 }
  
+@media only screen and (min-width : 1440px) {
+  header {
+    background-image: none;
+    height: 100px;
+    background-color: purple;
+  }
+
+  .main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+ 
+    .img-container {
+      margin: auto;
+  
+      img { 
+        width: 55%;
+      }
+    }
+    .main__info-container {
+      width: 40%;
+      margin-left: 40px;
+    }
+    .main__title {
+      font-family: $raleway;
+      font-weight: bolder;
+      font-size: 48px;
+      text-align: left;
+    }
+  
+    .main__text {
+      color: $neutral-gray;
+      margin: 0;
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+  .main__btn {
+    background-color: $accent;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 550;
+    width: 220px;
+    margin: 12px 0 36px 40px;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(201,201,201,1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(201,201,201,1);
+    box-shadow: 2px 2px 2px 0px rgba(201,201,201,1);
+    position: absolute;
+    left: 0;
+  }
+}
