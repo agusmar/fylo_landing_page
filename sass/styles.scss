@@ -388,3 +388,16 @@ footer {
   }
 }
 
+footer {
+  display: flex;
+}
+.footer__links-container {
+  display:flex;
+
+  width: 40%;
+
+  .footer__links-wrapper {
+
+  }
+}
+

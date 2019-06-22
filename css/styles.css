@@ -323,4 +323,13 @@ footer .join-btn__container .join-btn {
   width: 75%;
 }
 
+footer {
+  display: flex;
+}
+
+.footer__links-container {
+  display: flex;
+  width: 40%;
+}
+
 /*# sourceMappingURL=styles.css.map */
