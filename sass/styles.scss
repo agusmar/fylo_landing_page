@@ -1,403 +1,66 @@
-
-// - Mobile: 375px
-// - Desktop: 1440px
-
-//fonts ********************************************************************
-$raleway: 'Raleway', sans-serif;
-$open-sans: 'Open Sans', sans-serif;
+//fonts ********************************************************
+$raleway: "Raleway", sans-serif;
+$open-sans: "Open Sans", sans-serif;
 $light: 400;
 $normal: 600;
 $bold: 700;
 
 //colors ******************************************************
-$primary-soft:  hsl(243, 86%, 85%);
+$primary-soft: hsl(243, 86%, 85%);
 $primary-dark: hsl(243, 87%, 12%);
-
 $accent: hsl(163, 95%, 43%);
-
 $neutral-light: hsl(106, 0%, 98%);
 $neutral-gray: hsl(0, 0%, 50%);
 $neutral-dark: hsl(0, 0%, 17%);
-//**************************************************************4
+//*************************************************************
 
-html body {
-  padding: 0;
-  margin: 0;
-  font-family: $open-sans;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-header {
-  background-image: url(../images/bg-intro-mobile.svg);
+body {
+  margin: 0;
+  font-family: $open-sans;
+  font-size: 1.1em;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  background-image: url("/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 65%;
   background-position: top right;
-  height: 165px;
+  background-size: 65%;
 }
 
 .navbar {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .logo {
-    width: 80px;
-    margin-left: 30px;
-    margin-top: 30px;
-    
-    img {
-      width: 100%;
-
-    }
-  }
-
-  .btn-wrapper {
-    display: flex;
-    margin-right: 30px;
-    margin-top: 30px;
-  }
-}
-
-.navbar__btn {
-  padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 2px;
-  color: $neutral-light;
-  font-size: 12px;
+  justify-content: space-between;
+  ;
 
-  &.--green {
-    background-color: $accent;
+  .logo img {
     width: 100px;
   }
+  .navbar__btn {
+    border: none;
+    border-radius: 2px;
+    color: $neutral-light;
+    font-size: 1rem;
 
-  &.--transp {
-    background-color: transparent;
-  }
-}
-
-
-.main {
-  margin-top: -40px;
-  .img-container {
-    width: 70%;
-    margin: auto;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .main__title {
-    font-family: $raleway;
-    font-weight: bolder;
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .main__text {
-    color: $neutral-gray;
-    margin: 16px;
-    font-size: 13px;
-  }
-}
-.main__btn {
-  background-color: $accent;
-  padding: 14px;
-  border: none;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 550;
-  width: 220px;
-  margin: 12px 0 36px 0;
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(201,201,201,1);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(201,201,201,1);
-  box-shadow: 2px 2px 2px 0px rgba(201,201,201,1);
-}
-
-.features {
-  background-color: rgb(240, 240, 240);
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-  
-  .features__title {
-    font-family: $raleway;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 60px;
-    color: rgb(0, 0, 116);
-  }
-
-  .features__info {
-    color: $neutral-gray;
-    margin: 16px 20px 35px 20px;
-    font-size: 13px;
-  }
-
-  .features__card {
-    margin: 40px 0 40px 0;
-
-  }
-  .features__card-title {
-    width: 180px;
-    font-size: 15px;
-    color: $neutral-dark;
-  }
-
-  .features__card-img {
-    width: 80px;
-    margin: auto;
-    
-    img {
-      width: 100%;
-
-    }
-  }
-}
-
-.apps {
-  display:flex;
-  flex-direction: column;
-
-  .apps__title {
-    font-family: $raleway;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 60px;
-    color: $primary-dark;
-  }
-  
-  .apps__info {
-  color: $neutral-gray;
-  margin: 16px 20px 35px 20px;
-  font-size: 13px;
-    p {
-      color: $neutral-gray;
-    }
-  }
-
-  .apps__card-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-
-    .apps__card {
-      align-items: center;
-      justify-content: center;
-      width: 250px;;
-      text-align: center;
-      border-radius: 5px;
-      margin: 20px;
-      padding-bottom: 30px;
-      -webkit-box-shadow: 0px 0px 11px 0px rgba(201,201,201,1);
-      -moz-box-shadow: 0px 0px 11px 0px rgba(201,201,201,1);
-      box-shadow: 0px 0px 11px 0px rgba(201,201,201,1);
-    }
-
-    .apps__card-info {
-      color: $neutral-gray;
-      margin: 16px 16px 24px 16px;
-      font-size: 13px;
-      h5 {
-        color: $neutral-dark;
-      }
-    }
-
-    .apps__logo {
-      padding: 16px 0 16px 0;
-      width: 100%;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      height: 80px;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      
-
-      img {
-        width: 50%;
-      }
-    }
-  }
-}
-
-.sign-up {
-  h2 {
-    font-family: $raleway;
-    font-size: 18px;
-    font-weight: 700;
-    color: $primary-dark;
-
-  }
-
-  p {
-    color: $neutral-gray;
-    font-size: 13px;
-    margin: 30px;
-  }
-}
-
-footer {
-  background-color:  $primary-dark;
-  padding: 30px;
-  text-align: left;
-  color: $neutral-light;
-
-  p {
-    font-size: 13px;
-  }
-
-  .input-mail {
-    width: 100%;
-    height: 30px;
-  }
-
-  .join-btn__container {
-    text-align: right;
-    .join-btn {
-      padding: 8px 40px 8px 40px;
-      border: none;
-      border-radius: 2px;
-      color: $neutral-light;
-      font-size: 12px;
+    padding: 8px;
+    &.--green {
       background-color: $accent;
-      margin-top: 16px;
+      width: 90px;
     }
-  }
-}
-
-.contacts-wrapper {
-  margin: 24px 0 80px 0;
-  
-  .contacts__item {
-    margin: 12px 0 12px 0;
-  }
-}
-
-.footer__links-wrapper {
-  margin-bottom: 80px;
-}
-
-.footer__links {
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-  line-height: 36px;
-}
-
-.attribution {
-  color: $neutral-light;
-  margin-bottom: 20px;
-  text-align: center;
-  a {
-    text-decoration: none;
-    color: $neutral-gray;
-    font-weight: bold;
-  }
-}
- 
-@media only screen and (min-width : 1366px) {
-  header {
-    background-image: none;
-    height: 80px;
-    background-color: purple;
-  }
-
-  .main {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 500px;
- 
-    .img-container {
-      margin: auto;
-      text-align: center;
-  
-      img { 
-        width: 45%;
-      }
-    }
-    .main__info-container {
-      width: 40%;
-      margin-left: 40px;
-    }
-    .main__title {
-      font-family: $raleway;
-      font-weight: bolder;
-      font-size: 48px;
-      text-align: left;
-    }
-  
-    .main__text {
-      color: $neutral-gray;
-      margin: 0;
-      font-size: 20px;
-      text-align: left;
-    }
-  }
-  .main__btn {
-    margin: 12px 0 36px 40px;
-    position: absolute;
-    left: 0;
-  }
-
-  .features {
-    .features__title  {
-      h2 { 
-        font-size: 40px; 
-      }
+    &.--transp {
+      background-color: transparent;
+      width: 80px;
     }
   }
 
-  // NO ME TOMA LA CLASE Y LA MALDITA ESPECIFICIDAD DEL ORTO!!!
 
 
-  .features__info {
-    font-size: 20px;
-    width: 25%;
-  }
-  .features__card-wrapper {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    .features__card-img {
-      height: 100px;
-      display: flex;
-      align-items: center;
-    }
-  }
+
+
 }
-
-.apps {
-  display: flex;
-
-  .apps__description {
-    display: flex;
-    flex-direction: column;
-
-  }
-  .apps__card-wrapper {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 75%;
-  }
-}
-
-footer {
-  display: flex;
-}
-.footer__links-container {
-  display:flex;
-
-  width: 40%;
-
-  .footer__links-wrapper {
-
-  }
-}
-
